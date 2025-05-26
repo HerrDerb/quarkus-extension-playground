@@ -8,12 +8,12 @@ public class AdvancedClient extends BaseClient {
 
     AdvancedClient() {
         super(null);
-        log.info("Initializing AdvancedClient with noArgs constructor");
+        log.warn("Initializing AdvancedClient with noArgs constructor");
     }
 
     public AdvancedClient(String name) {
         super(name);
-        log.info("Initializing AdvancedClient with name {}", name);
+        log.warn("Initializing AdvancedClient with name {}", name);
     }
 
     @Retry
